@@ -1,0 +1,8 @@
+[('Candidate is jerk, alleges rival', 6710940L),
+('There are a lot of bears', 6710940L),
+('Balloon goons doomed', 6710940L)]
+
+[('Ursula La Multa', 8121504L),
+('Rudolf von Treppenwitz', 6775312L),
+('Anonymous Contributor', 2721568L),
+('Markoff Chaney', 1352912L)]
