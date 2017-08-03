@@ -1,5 +1,5 @@
 ## Views that need to be created
-
+```
 CREATE VIEW error_view AS
 SELECT date(time), COUNT(*) AS errors
 FROM log
@@ -18,3 +18,4 @@ SELECT full_view.date, (100.0*error_view.errors/full_view.views) AS rate
 FROM full_view, error_view
 WHERE full_view.date = error_view.date
 ORDER BY full_view.date;
+```
