@@ -12,37 +12,38 @@ def Analysis(query):
     database.close()
 
 
-# Most Popular articles, descending order
-query1 = """select title, count(*) AS count
-from articles, log
-where log.path like concat('%', articles.slug)
-group by articles.title
-order by count desc
+# Most Popular articles, DESCending order
+query1 = """SELECT title, COUNT(*) AS count
+FROM articles, log
+WHERE log.path LIKE concat('%', articles.slug)
+GROUP BY articles.title
+ORDER BY count DESC
 LIMIT 3"""
 
 # Most Popular article authors
-query2 = """select authors.name, count(articles.author) AS count from articles,
-        log, authors where
+query2 = """SELECT authors.name, COUNT(articles.author) AS count
+        FROM articles,
+        log, authors WHERE
         log.path = concat('/article/',articles.slug)
-        and articles.author = authors.id
-        group by authors.name
-        order by count desc"""
+        AND articles.author = authors.id
+        GROUP BY authors.name
+        ORDER BY count DESC"""
 
-# Days where more than 1% of requests led to errors
+# Days WHERE more than 1% of requests led to errors
 
 # first create this view
     """CREATE VIEW error_view AS
-    select date(time), count(*) AS errors
-    from log
-    where status like '%404%'
-    group by date(time)
-    ORDER by date(time);"""
+    SELECT date(time), COUNT(*) AS errors
+    FROM log
+    WHERE status LIKE '%404%'
+    GROUP BY date(time)
+    ORDER BY date(time);"""
 
 """CREATE VIEW full_view AS
-select date(time), count(*) AS views
-from log
-group by date(time)
-order by date(time) """
+SELECT date(time), COUNT(*) AS views
+FROM log
+GROUP BY date(time)
+ORDER BY date(time) """
 
 """CREATE VIEW error_percentage AS
 SELECT full_view.date, (100.0*error_view.errors/full_view.views) AS rate
