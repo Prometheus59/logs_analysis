@@ -1,7 +1,8 @@
 import psycopg2
 
-
 # Analysis Function
+
+
 def Analysis(query):
     dbname = "news"
     database = psycopg2.connect(database=dbname)

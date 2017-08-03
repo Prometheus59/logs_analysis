@@ -6,3 +6,5 @@
 ('Rudolf von Treppenwitz', 6775312L),
 ('Anonymous Contributor', 2721568L),
 ('Markoff Chaney', 1352912L)]
+
+[(datetime.date(2016, 7, 17), Decimal('2.2626862468027260'))]
