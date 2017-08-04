@@ -59,21 +59,5 @@ ORDER BY full_view.date;
 9. Run the program by entering the following in the terminal:
 ` python logs_analysis.py `
 
-## Example Output
-```
-*** MOST POPULAR 3 ARTICLES OF ALL TIME ***
-"Candidate is jerk, alleges rival" -- 1693235 views
-"Bears love berries, alleges bear" -- 1269005 views
-"Bad things gone, say good people" -- 850490 views
 
-
-*** MOST POPULAR AUTHORS OF ALL TIME ***
-"Ursula La Multa" -- 12689850 views
-"Rudolf von Treppenwitz" -- 10586425 views
-"Anonymous Contributor" -- 4252450 views
-"Markoff Chaney" -- 2113925 views
-
-
-*** DAYS WHERE MORE THAN 1% OF REQUESTS LED TO ERRORS ***
-July 17, 2016 -- 2.26% errors
-```
+Note: Example output can be found in program_output.txt

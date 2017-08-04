@@ -1,4 +1,7 @@
+#!/usr/bin/env python3
+
 import psycopg2
+
 # For problem 3
 from datetime import date
 
@@ -72,7 +75,8 @@ def more_errors():
 
     # Printing results for problem 3
     print(" ")
-    print("*** DAYS WHERE MORE THAN " + "1% " + "OF REQUESTS LED TO ERRORS ***")
+    print("*** DAYS WHERE MORE THAN " +
+          "1% " + "OF REQUESTS LED TO ERRORS ***")
     print(" ")
 
     for i in most_errors:
@@ -81,6 +85,7 @@ def more_errors():
         print(" ")
 
 
-popular_articles()
-popular_authors()
-more_errors()
+if __name__ == "__main__":
+    popular_articles()
+    popular_authors()
+    more_errors()

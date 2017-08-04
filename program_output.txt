@@ -1,24 +1,16 @@
 
 *** MOST POPULAR 3 ARTICLES OF ALL TIME ***
-
-"Candidate is jerk, alleges rival" -- 1693235 views
-
-"Bears love berries, alleges bear" -- 1269005 views
-
-"Bad things gone, say good people" -- 850490 views
+"Candidate is jerk, alleges rival" -- 677294 views
+"Bears love berries, alleges bear" -- 507602 views
+"Bad things gone, say good people" -- 340196 views
 
 
 *** MOST POPULAR AUTHORS OF ALL TIME ***
-
-"Ursula La Multa" -- 12689850 views
-
-"Rudolf von Treppenwitz" -- 10586425 views
-
-"Anonymous Contributor" -- 4252450 views
-
-"Markoff Chaney" -- 2113925 views
+"Ursula La Multa" -- 2030376 views
+"Rudolf von Treppenwitz" -- 1693828 views
+"Anonymous Contributor" -- 680392 views
+"Markoff Chaney" -- 338228 views
 
 
 *** DAYS WHERE MORE THAN 1% OF REQUESTS LED TO ERRORS ***
-
 July 17, 2016 -- 2.26% errors
